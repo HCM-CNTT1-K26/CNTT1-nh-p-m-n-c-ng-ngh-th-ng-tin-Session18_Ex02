@@ -12,6 +12,7 @@
 ## 2. Triển khai: Mẩu tin Cookie bảo mật
 
 Chuyển từ Session Cookie sang Persistent Cookie bằng cách thêm `Max-Age` và gắn cờ bảo mật trong HTTP response header từ phía server:
+
 http
 Set-Cookie: session_id=xyz789_token; Max-Age=2592000; Secure; HttpOnly; SameSite=Strict; Path=/
 
